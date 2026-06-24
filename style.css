@@ -136,7 +136,7 @@ video {
 
 footer {
   width: 100%;
-  text-align: center;
+  text-align: start;
   padding: 5px 0 5px 0;
   background: var(--amarelo);
   color: white;
