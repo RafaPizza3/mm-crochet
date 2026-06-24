@@ -1,33 +1,81 @@
 :root {
   --amarelo: #e8b923;
   --bege: #f3e7d3;
-  --branco: #ffffff;
+  --branco: #f0f0f0;
   --texto: #5a4632;
 }
 
 body {
   margin: 0;
   font-family:
-    Segoe UI,
+    Montserrat,
     sans-serif;
   background: var(--bege);
   color: var(--texto);
 }
 
 header {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
   background: white;
+
+  div:nth-child(1) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  div:nth-child(2) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 20px;
+    gap: 10px;
+
+    button {
+      border: none;
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 500;
+      border-radius: 5px;
+      padding: 5px;
+      cursor: pointer;
+      color: var(--texto);
+      transition: 0.3s ease;
+    }
+
+    button:nth-child(1) {
+      background-color: var(--amarelo);
+      border: 2px solid var(--amarelo);
+    }
+
+    button:nth-child(1):hover {
+      background-color: transparent;
+    }
+
+    button:nth-child(2) {
+      background-color: transparent;
+      border: 2px solid var(--amarelo);
+    }
+
+    button:nth-child(2):hover {
+      background-color: var(--amarelo);
+    }
+  }
 }
 
 .logo {
-  max-width: 180px;
+  max-width: 70px;
+  margin: 20px
 }
 
 nav {
   background: var(--amarelo);
   padding: 15px;
-  text-align: center;
+  text-align: start;
 }
 
 nav a {
@@ -38,8 +86,22 @@ nav a {
 }
 
 .hero {
-  text-align: center;
+  text-align: start;
   padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+
+  h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 .cursos {
@@ -52,8 +114,19 @@ nav a {
 .card {
   background: white;
   padding: 20px;
+  padding-top: 0;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    max-width: 30px;
+  }
 }
 
 video {
@@ -62,9 +135,10 @@ video {
 }
 
 footer {
+  width: 100%;
   text-align: center;
-  padding: 20px;
+  padding: 5px 0 5px 0;
   background: var(--amarelo);
   color: white;
-  margin-top: 30px;
+  bottom: 0;
 }
