@@ -141,4 +141,8 @@ footer {
   background: var(--amarelo);
   color: white;
   bottom: 0;
+
+  p {
+    margin-left: 20px;
+  }
 }
