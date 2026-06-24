@@ -7,9 +7,7 @@
 
 body {
   margin: 0;
-  font-family:
-    Montserrat,
-    sans-serif;
+  font-family: Montserrat, sans-serif;
   background: var(--bege);
   color: var(--texto);
 }
@@ -27,49 +25,11 @@ header {
     align-items: center;
     margin-right: 20px;
   }
-
-  div:nth-child(2) {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-right: 20px;
-    gap: 10px;
-
-    button {
-      border: none;
-      font-family: Montserrat;
-      font-size: 15px;
-      font-weight: 500;
-      border-radius: 5px;
-      padding: 5px;
-      cursor: pointer;
-      color: var(--texto);
-      transition: 0.3s ease;
-    }
-
-    button:nth-child(1) {
-      background-color: var(--amarelo);
-      border: 2px solid var(--amarelo);
-    }
-
-    button:nth-child(1):hover {
-      background-color: transparent;
-    }
-
-    button:nth-child(2) {
-      background-color: transparent;
-      border: 2px solid var(--amarelo);
-    }
-
-    button:nth-child(2):hover {
-      background-color: var(--amarelo);
-    }
-  }
 }
 
 .logo {
   max-width: 70px;
-  margin: 20px
+  margin: 20px;
 }
 
 nav {
@@ -144,5 +104,17 @@ footer {
 
   p {
     margin-left: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  nav {
+    text-align: center;
   }
 }
