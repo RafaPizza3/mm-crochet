@@ -1,0 +1,70 @@
+:root {
+  --amarelo: #e8b923;
+  --bege: #f3e7d3;
+  --branco: #ffffff;
+  --texto: #5a4632;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Segoe UI,
+    sans-serif;
+  background: var(--bege);
+  color: var(--texto);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: white;
+}
+
+.logo {
+  max-width: 180px;
+}
+
+nav {
+  background: var(--amarelo);
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--amarelo);
+  color: white;
+  margin-top: 30px;
+}
